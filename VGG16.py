@@ -13,10 +13,9 @@ from keras.activations import softmax
 from keras.optimizers import SGD
 from keras import backend as K
 K.set_image_dim_ordering('th')
-from keras.applications.vgg16 import preprocess_input, decode_predictions
-from matplotlib import pyplot as plt
+from keras.applications.vgg16 import  decode_predictions
 from keras.models import load_model
-
+########################################################################################
 def VGG_16(weights_path):
     
     model = Sequential()
@@ -67,12 +66,13 @@ def VGG_16(weights_path):
     model.load_weights(weights_path)
 
     return model
+   ##################################################################################################
 if __name__ == "__main__":
     model = VGG_16("vgg16_weights_th_dim_ordering_th_kernels.h5")
     model.summary()
     sgd = SGD(lr=0.1, decay=1e-6, momentum=0.9, nesterov=True)
     model.compile(optimizer=sgd, loss='categorical_crossentropy')
-    img = cv2.resize(cv2.imread('rose.jpg'), (224, 224))
+    img = cv2.resize(cv2.imread('images/cat.jpg'), (224, 224))
     
     mean_pixel = [103.939, 116.779, 123.68]
     img = img.astype(np.float32, copy=False)
