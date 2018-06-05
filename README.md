@@ -16,7 +16,7 @@
 
 ###### VGG19 architechture 
 
-	![alt text](https://github.com/anmesh-vicky/ConvNet/blob/master/VGG19.png)
+![alt text](https://github.com/anmesh-vicky/ConvNet/blob/master/VGG19.png)
 
 ##### Few Notes about about paper
 	*scaling is not done on input image but  mean value is subtracted
