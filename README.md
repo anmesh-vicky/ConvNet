@@ -18,7 +18,7 @@
 
 ![alt text](https://github.com/anmesh-vicky/ConvNet/blob/master/VGG19.png)
 
-##### Few Notes about about paper
+##### Few Notes about  paper
 	*scaling is not done on input image but  mean value is subtracted
 	*Input image is 244*244 in the Network
 	
