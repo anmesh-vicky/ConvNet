@@ -17,7 +17,7 @@ from keras.applications.vgg19 import preprocess_input, decode_predictions
 from matplotlib import pyplot as plt
 from keras.models import load_model
 
-def VGG_16(weights_path):
+def VGG_19(weights_path):
     
     model = Sequential()
     model.add(ZeroPadding2D((1,1),input_shape=(3,224,224)))
@@ -75,7 +75,7 @@ def VGG_16(weights_path):
     return model
 
 if __name__ == "__main__":
-    model = VGG_16("vgg19_weights_th_dim_ordering_th_kernels.h5")
+    model = VGG_19("vgg19_weights_th_dim_ordering_th_kernels.h5")
     model.summary()
     sgd = SGD(lr=0.1, decay=1e-6, momentum=0.9, nesterov=True)
     model.compile(optimizer=sgd, loss='categorical_crossentropy')
