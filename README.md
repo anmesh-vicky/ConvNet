@@ -12,7 +12,7 @@
 * Tensorflow
 * python3
 
-##### The Model weight for [VVG16](https://github.com/fchollet/deep-learning-models/releases/download/v0.1/vgg16_weights_th_dim_ordering_th_kernels.h5) [VVG19](https://github.com/fchollet/deep-learning-models/releases/download/v0.1/vgg19_weights_th_dim_ordering_th_kernels.h5) can be downloaded and saved in the weight folder
+##### The Model weight for [VGG16](https://github.com/fchollet/deep-learning-models/releases/download/v0.1/vgg16_weights_th_dim_ordering_th_kernels.h5) [VGG19](https://github.com/fchollet/deep-learning-models/releases/download/v0.1/vgg19_weights_th_dim_ordering_th_kernels.h5) can be downloaded and saved in the weight folder
 
 ###### VGG19 architechture 
 
